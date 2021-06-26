@@ -33,6 +33,13 @@ Divide by 5, then multiply by 9, then add 32
 */
 
 
+weeklyForecast.map((function convertToCelsius(Faherenheit) {
+const temperature = celsius;
+const celsiusToFaherenheit = (celsius * 9) / 5 + 32;
+return celsiusToFaherenheit;
+})
+
+
 
 
 
@@ -56,7 +63,12 @@ Divide by 5, then multiply by 9, then add 32
 
 */
 
-
+const filterWeely = weeklyForecast.filter((Forecast)=>{
+  //   return Forecast.length > 5
+  // })
+  
+  
+  
 
 
 
@@ -82,7 +94,7 @@ const mondayTemperature = monday.temperature
 const mondayCloudCoverage = monday.cloudCoverage
 const mondayWind = monday.wind
 
-
+// I dont understand this 
 
 
 
@@ -97,6 +109,16 @@ and values currently on sunday but with a cloudCoverage property set to "broken"
 The new sunday object should look like this: 
 {day: "Sunday", temperature: 17, cloudCoverage: "broken", wind: 30}
 */
+const weeklyForecast = [
+  {day: "Sunday", temperature: 17,}
+]
+const WeeklyForecast2 = [
+  { cloudCoverage: "broken", wind: 30}
+]
+const newWeeklyForecast = {
+  ...weeklyForecast,...WeeklyForecast2
+};
+console.log(newWeeklyForecast);
 
 
 
@@ -125,3 +147,5 @@ const weekTwoForecast = [
   {day: "Saturday", temperature: 19, cloudCoverage: "broken", wind: 25},
   {day: "Sunday", temperature: 17, cloudCoverage: "overcast", wind: 30}
 ]
+
+// I don't understand what I need to do here.
