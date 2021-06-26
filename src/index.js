@@ -20,7 +20,11 @@ const weeklyForecast = [
 /* Map 
 
 In weeklyForecast array, the temperature properties are in Celcius
-Please write an arrow function which takes weeklyForecast as an argument and returns a new array. The new array should include day objects like in
+
+
+Please write an arrow function which takes weeklyForecast as an argument and returns a new array. 
+
+The new array should include day objects like in
 weeklyForecast array but the temperature value should be converted to Faherenheit.
 
 the value of the first item in the new array should be 
@@ -31,6 +35,26 @@ The formula for converting Celcius to Faherenheit is:
 Divide by 5, then multiply by 9, then add 32
 
 */
+
+const weeklyForecast = [
+  {day: "Monday",   temperature: 20, cloudCoverage: "broken", wind: 16},
+  {day: "Thuesday", temperature: 22, cloudCoverage: "few", wind: 10},
+  {day: "Wednesday", temperature: 26, cloudCoverage: "clear", wind: 5},
+  {day: "Thursday", temperature: 24, cloudCoverage: "clear", wind: 5},
+  {day: "Friday", temperature: 24, cloudCoverage: "few", wind: 18},
+  {day: "Saturday", temperature: 19, cloudCoverage: "broken", wind: 25},
+  {day: "Sunday", temperature: 17, cloudCoverage: "overcast", wind: 30}
+]
+
+const NewweeklyForecast = weeklyForecast.map(items => {
+   container = {} 
+container[items.day] = items.temperature;
+  	container[items.day] = items.cloudCoverage;  
+  container[items.day] = items.wind
+    return container;
+})
+
+console.log(NewweeklyForecast);
 
 
 
@@ -55,6 +79,17 @@ Divide by 5, then multiply by 9, then add 32
   ]
 
 */
+
+const daysOfTheWeek = [
+  {day: "Thuesday", temperature: 22, cloudCoverage: "few", wind: 10},
+  {day: "Wednesday", temperature: 26, cloudCoverage: "clear", wind: 5},
+  {day: "Thursday", temperature: 24, cloudCoverage: "clear", wind: 5},
+  {day: "Friday", temperature: 24, cloudCoverage: "few", wind: 18},
+];
+
+const sunnyDays = daysOfTheWeek.filter(days => days.cloudCoverage = "clear");
+console.log(sunnyDays);
+
 
 
 
