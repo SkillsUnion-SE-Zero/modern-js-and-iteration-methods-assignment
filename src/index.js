@@ -109,6 +109,7 @@ const [monday, tuesday, wednesday, thursday, friday, saturday, sunday] = weeklyF
 // const cloudCoverage = monday.cloudCoverage
 // const wind = monday.wind
 
+
 // Solution
 
 const { temperature, cloudCoverage, wind } = monday
